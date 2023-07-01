@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import folder from "../images/folder.png";
+import folder from "../images/folder1.png";
 import "./home.css";
 import Category from "./Category";
 import "./overview.css";
@@ -37,23 +37,23 @@ function Home() {
           <div className="folders">
             <FolderItem
               imageSrc={folder}
-              title="fair subs"
-              onClick={() => handleCategoryFilesClick("fair subs")}
+              title="fire nation"
+              onClick={() => handleCategoryFilesClick("fire nation")}
             />
             <FolderItem
               imageSrc={folder}
-              title="Other subs"
-              onClick={() => handleCategoryFilesClick("Other subs")}
+              title="water nation"
+              onClick={() => handleCategoryFilesClick("water nation")}
             />
             <FolderItem
               imageSrc={folder}
-              title="another sub"
-              onClick={() => handleCategoryFilesClick("another sub")}
+              title="air nation"
+              onClick={() => handleCategoryFilesClick("air nation")}
             />
             <FolderItem
               imageSrc={folder}
-              title="worst performed"
-              onClick={() => handleCategoryFilesClick("worst performed")}
+              title="earth nation"
+              onClick={() => handleCategoryFilesClick("earth nation")}
             />
           </div>
           <div className="add-button">

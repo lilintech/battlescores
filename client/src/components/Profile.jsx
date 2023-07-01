@@ -1,7 +1,7 @@
 import React from 'react'
 import profile from "../images/boy.png";
 import streak from "../images/streak.png";
-import folder from "../images/folder.png"
+import folder from "../images/folder1.png"
 import file from "../images/filefold.png"
 import "./overview.css"
 

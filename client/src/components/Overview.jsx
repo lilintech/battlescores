@@ -27,7 +27,7 @@ function Overview() {
         setShowHome(!showHome);
         setShowSettings(false);
     }
-    
+
 
   return (
     <body>
@@ -36,19 +36,19 @@ function Overview() {
        <p>Home</p>
        </div>
         <div className="menu" onClick={handleProfileClick} >
-        <p>profile</p>
+        <p>Profile</p>
 
         </div>
         <div className="menu" onClick={handleSettingsClick} >
-        <p>settings</p>
+        <p>Settings</p>
 
         </div>
         <div className="menu">
-        <p>logout</p>
+        <p>Logout</p>
 
         </div>
       </div>
-      
+
 
       <div className="overview">
      {showProfile && <Profile></Profile>}
@@ -56,7 +56,7 @@ function Overview() {
      {showSettings && <Settings></Settings>}
 
       </div>
-     
+
     </body>
   );
 }
