@@ -2,7 +2,7 @@ body{
     display: flex;
     height: 100vh;
     width: 100vw;
-    justify-content: center;
+    /* justify-content: center; */
     /* align-items: center; */
     border: 1px solid black;
 }
@@ -19,7 +19,7 @@ body{
     width: 30%;
     }
 .overview{
-    width: 70%;
+    width: 100%;
     background-color: wheat;
 
 }
@@ -29,30 +29,6 @@ body{
     text-align: center;
 }
 
-    /* ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 210px;
-    background-color: white;
-    }
-    
-    li {
-    margin-bottom: 98px;
-    border-bottom: 1px solid #ccc;
-    }
-    
-    li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-    }
-    
-    li a:hover {
-    background-color: rgb(124, 124, 172);
-    color: #fff;
-    } */
 
 
 
@@ -91,4 +67,58 @@ body{
     .current-folders img,
     .current-files img{
         width: 70px;
+    }
+
+    .category-main{
+        /* width: 100vw; */
+        height: 100vh;
+        width: 120%;
+        background-color: green;
+        display: flex;
+
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    .category-left{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+       
+    }
+    .category-top img{
+        width: 50px;
+    }
+    .category-right{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        background-color: yellow;
+        gap: 1.5em;
+    }
+    .category-right button{
+        padding: 8px 10px;
+        width: 150px;
+        margin-left: 30px;
+        border-radius: 10%;
+        
+    }
+    .category-top{
+        display: flex;
+        align-items: center;
+        gap: 1.5em;
+        margin-top: 30px;
+
+    }
+    .image-category{
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        margin-top: 60px;
+    }
+    .image-category img{
+        width: 40px;
     }
