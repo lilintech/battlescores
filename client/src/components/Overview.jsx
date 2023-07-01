@@ -1,20 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import "./overview.css";
 import folder from "../images/folder.png";
+import Profile from "./Profile";
+import Home from "./Home";
+import Settings from "./Settings";
 
 function Overview() {
+
+    const [showProfile, setShowProfile] = useState(false);
+    const [showHome, setShowHome] = useState(false);
+    const [showSettings, setShowSettings] = useState(false);
+
+
+    const handleProfileClick = () =>{
+        setShowProfile(!showProfile)
+        setShowHome(false)
+        setShowSettings(false)
+    }
+    const handleSettingsClick = () =>{
+        setShowProfile(false);
+        setShowHome(false);
+        setShowSettings(!showSettings);
+    }
+    const handleHomeClick = () =>{
+        setShowProfile(false);
+        setShowHome(!showHome);
+        setShowSettings(false);
+    }
+
   return (
     <body>
-      <div class="items">
-       <div className="menu">
+      <div className="items">
+       <div className="menu" onClick={handleHomeClick} >
        <p>Home</p>
-        <hr style={{width: "100%" }}  />
        </div>
-        <div className="menu">
+        <div className="menu" onClick={handleProfileClick} >
         <p>profile</p>
 
         </div>
-        <div className="menu">
+        <div className="menu" onClick={handleSettingsClick} >
         <p>settings</p>
 
         </div>
@@ -26,14 +50,10 @@ function Overview() {
       
 
       <div className="overview">
-      <div class="foldername">
-        <img src={folder} alt="folder" />
-      </div>
-      <div class="overviewbtn">
-        <a href="another_page.html" class="button">
-          Go to Another Page
-        </a>
-      </div>
+     {showProfile && <Profile></Profile>}
+     {showHome && <Home></Home>}
+     {showSettings && <Settings></Settings>}
+
       </div>
      
     </body>

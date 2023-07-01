@@ -29,7 +29,7 @@ body{
     text-align: center;
 }
 
-    ul {
+    /* ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -52,4 +52,43 @@ body{
     li a:hover {
     background-color: rgb(124, 124, 172);
     color: #fff;
+    } */
+
+
+
+
+    /* profile page */
+    .profile-page{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: space-around;
+        margin-left: 70px;
+        /* align-items: center; */
+        /* justify-items: space-evenly; */
+        /* gap: 2em; */
+        /* align-items: space-between; */
+
+    }
+    .profile-page h1{
+        text-align: center;
+        /* margin: 20px; */
+    }
+
+
+    .profile-img,
+    .current-streak,
+    .current-folders,
+    .current-files{
+        display: flex;
+        gap: 2.5em;
+        
+
+    }
+    .profile-img img,
+    .current-streak img,
+    .current-folders img,
+    .current-files img{
+        width: 70px;
     }
